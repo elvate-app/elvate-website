@@ -7,8 +7,7 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import { Box, styled, Typography } from "@mui/material";
-import { ReactComponent as BarSvg1 } from "src/assets/bar1.svg";
-import { ReactComponent as BarSvg3 } from "src/assets/bar3.svg";
+import BarSvg from "src/component/BarSvg";
 
 const Root = styled(Box)`
   justify-content: center;
@@ -18,18 +17,6 @@ const Root = styled(Box)`
   padding: ${({ theme }) => theme.spacing(6)};
   padding-top: ${({ theme }) => theme.spacing(15)};
   position: relative;
-`;
-
-const StyledBarSvg3 = styled(BarSvg3)`
-  position: absolute;
-  bottom: 0;
-  z-index: -10;
-`;
-
-const StyledBarSvg1 = styled(BarSvg1)`
-  position: absolute;
-  top: 0;
-  z-index: -10;
 `;
 
 const RoadmapSection = () => {
@@ -92,8 +79,8 @@ const RoadmapSection = () => {
         </TimelineItem>
       </Timeline>
 
-      <StyledBarSvg1 />
-      <StyledBarSvg3 />
+      <BarSvg transform="scale(1,-1)" sx={{ top: 0 }} />
+      <BarSvg sx={{ bottom: 0 }} />
     </Root>
   );
 };

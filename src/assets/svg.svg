@@ -1,0 +1,20 @@
+<svg viewBox="0 0 1660 208" width="100%" color="text" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <title>Layer 1</title>
+    <rect filter="url(#svg_8_blur)" opacity="0.25" transform="rotate(3, 815.746, 182.177)" stroke-width="0" id="svg_9"
+      height="105.65017" width="1841.324" y="129.35222" x="-104.9157" stroke="#000" fill="#191d24" />
+    <path id="svg_1" d="m-14,172" opacity="NaN" stroke="#000" fill="#00efef" />
+    <path id="svg_2" d="m-23.33743,175.99965" opacity="NaN" stroke="#000" fill="#00efef" />
+    <rect transform="rotate(3, 818.658, 226.666)" stroke-width="0" id="svg_3" height="167.99915" width="1841.324"
+      y="142.66649" x="-102.0037" stroke="#000" fill="#00bd8a" />
+    <rect transform="rotate(2, 814.658, 246.666)" stroke-width="0" id="svg_5" height="167.99915" width="1841.324"
+      y="162.6664" x="-106.00368" stroke="#000" fill="#191d24" />
+    <rect filter="url(#svg_8_blur)" opacity="0.5" transform="rotate(2, 815.746, 203.511)" stroke-width="0" id="svg_8"
+      height="105.65017" width="1841.324" y="150.68545" x="-104.9157" stroke="#000" fill="#191d24" />
+  </g>
+  <defs>
+    <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_8_blur">
+      <feGaussianBlur stdDeviation="4.7" in="SourceGraphic" />
+    </filter>
+  </defs>
+</svg>

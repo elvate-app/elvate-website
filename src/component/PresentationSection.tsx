@@ -1,6 +1,6 @@
 import { Box, Button, Grid, styled, Typography } from "@mui/material";
-import { ReactComponent as BarSvg } from "src/assets/bar2.svg";
 import ElvateText from "src/assets/elvate-text.svg";
+import BarSvg from "src/component/BarSvg";
 
 const Root = styled(Box)`
   justify-content: center;
@@ -15,12 +15,6 @@ const Root = styled(Box)`
 
 const ElvateTextImg = styled("img")`
   height: 40px;
-`;
-
-const StyledBarSvg = styled(BarSvg)`
-  position: absolute;
-  bottom: 0;
-  z-index: -10;
 `;
 
 const ButtonItem = styled(Grid)`
@@ -70,7 +64,7 @@ const PresentationSection = () => {
         </Grid>
       </Box>
 
-      <StyledBarSvg />
+      <BarSvg transform="scale(-1,1)" sx={{ bottom: 0 }} />
     </Root>
   );
 };
