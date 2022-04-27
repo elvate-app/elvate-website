@@ -45,7 +45,7 @@ const HowToSection = () => {
             animateOut="animate__fadeOutLeft"
             style={{ height: "100%" }}
             animateOnce={isMobile}
-            offset={300}
+            offset={200}
           >
             <Typography variant="h5" marginBottom={3} color="primary">
               1. Deposit
@@ -62,7 +62,7 @@ const HowToSection = () => {
             animateOut="animate__fadeOut"
             style={{ height: "100%" }}
             animateOnce={isMobile}
-            offset={300}
+            offset={200}
           >
             <Typography variant="h5" marginBottom={3} color="primary">
               2. Subscribe
@@ -79,7 +79,7 @@ const HowToSection = () => {
             animateOut="animate__fadeOutRight"
             style={{ height: "100%" }}
             animateOnce={isMobile}
-            offset={300}
+            offset={200}
           >
             <Typography variant="h5" marginBottom={3} color="primary">
               3. Enjoy

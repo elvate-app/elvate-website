@@ -33,7 +33,7 @@ const RoadmapSection = () => {
       blur={3}
       bgImage={BackgroundSvg1}
       bgImageStyle={{
-        height: "100vh",
+        height: "80vh",
         width: "90%",
         zIndex: -9,
         opacity: isMobile ? 0 : 0.05,
@@ -45,7 +45,7 @@ const RoadmapSection = () => {
         blur={1}
         bgImage={BackgroundSvg2}
         bgImageStyle={{
-          height: "100vh",
+          height: "80vh",
           width: "60%",
           zIndex: -8,
           opacity: isMobile ? 0 : 0.1,
@@ -70,6 +70,7 @@ const RoadmapSection = () => {
                 <ScrollAnimation
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
+                  offset={80}
                 >
                   Core smart contract
                 </ScrollAnimation>
@@ -84,6 +85,7 @@ const RoadmapSection = () => {
                 <ScrollAnimation
                   animateIn="animate__fadeInLeft"
                   animateOnce={true}
+                  offset={80}
                 >
                   Frontend application
                 </ScrollAnimation>
@@ -98,6 +100,7 @@ const RoadmapSection = () => {
                 <ScrollAnimation
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
+                  offset={80}
                 >
                   In-depth testing
                 </ScrollAnimation>
@@ -112,6 +115,7 @@ const RoadmapSection = () => {
                 <ScrollAnimation
                   animateIn="animate__fadeInLeft"
                   animateOnce={true}
+                  offset={80}
                 >
                   Deploy on Binance Smart chain Testnet
                 </ScrollAnimation>
@@ -126,6 +130,7 @@ const RoadmapSection = () => {
                 <ScrollAnimation
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
+                  offset={80}
                 >
                   Deploy on Binance Smart chain
                 </ScrollAnimation>
@@ -140,6 +145,7 @@ const RoadmapSection = () => {
                 <ScrollAnimation
                   animateIn="animate__fadeInLeft"
                   animateOnce={true}
+                  offset={80}
                 >
                   Support other chain
                 </ScrollAnimation>
@@ -153,6 +159,7 @@ const RoadmapSection = () => {
                 <ScrollAnimation
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
+                  offset={80}
                 >
                   Snapshot airdrop ?
                 </ScrollAnimation>
