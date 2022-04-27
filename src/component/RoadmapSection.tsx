@@ -79,8 +79,8 @@ const RoadmapSection = () => {
         </TimelineItem>
       </Timeline>
 
-      <BarSvg transform="scale(1,-1)" sx={{ top: 0 }} />
-      <BarSvg sx={{ bottom: 0 }} />
+      <BarSvg transform="scale(1,-1)" sx={{ top: -1 }} />
+      <BarSvg transform="scale(-1,1)" sx={{ bottom: -1 }} />
     </Root>
   );
 };

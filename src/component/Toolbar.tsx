@@ -1,13 +1,12 @@
 import { Menu } from "@mui/icons-material";
-import { Box, Button, Toolbar } from "@mui/material";
-import { styled } from "@mui/system";
+import { Box, Button, styled, Toolbar } from "@mui/material";
 import { useState } from "react";
 import ElvateIcon from "src/assets/elvate-icon.svg";
 import ElvateText from "src/assets/elvate-text.svg";
 
 const StyledToolbar = styled(Toolbar)`
-  background-color: ${({ theme }) => theme.palette.background.background};
-  padding: ${({ theme }) => theme.spacing(2)};
+  background-color: ${({ theme }: any) => theme.palette.background.background};
+  padding: ${({ theme }: any) => theme.spacing(2)};
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
