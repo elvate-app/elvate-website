@@ -26,7 +26,7 @@ const Root = styled(Box)`
 const Container = styled(Grid)`
   padding-right: ${({ theme }) => theme.spacing(5)};
   padding-left: ${({ theme }) => theme.spacing(5)};
-  max-width: 75vh;
+  max-width: 80vh;
 `;
 
 const ButtonItem = styled(Grid)`
