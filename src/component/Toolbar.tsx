@@ -14,7 +14,7 @@ const StyledToolbar = styled(Toolbar)`
   top: 0;
   z-index: 999;
 
-  @media (max-width: 599px) {
+  @media (max-width: 899px) {
     display: block;
   }
 `;
@@ -22,7 +22,7 @@ const StyledToolbar = styled(Toolbar)`
 const ButtonsContainer = styled(Box)`
   overflow: hidden;
 
-  @media (max-width: 599px) {
+  @media (max-width: 899px) {
     display: flex;
     flex-direction: column;
   }
@@ -50,7 +50,7 @@ const StyledMenu = styled(Menu)`
   height: 1.5em;
   width: 1.5em;
 
-  @media (max-width: 599px) {
+  @media (max-width: 899px) {
     display: block;
   }
 `;
@@ -77,7 +77,17 @@ const CustomToolbar = () => {
         <Box flex={1} />
         <StyledMenu onClick={() => setDisplayMenu(!displayMenu)} />
       </IconContainer>
-      <ButtonsContainer height={{ xs: displayMenu ? "auto" : 0, sm: "auto" }}>
+      <ButtonsContainer height={{ xs: displayMenu ? "auto" : 0, md: "auto" }}>
+        <Button
+          sx={{ margin: 1, marginTop: { xs: 3, md: 1 } }}
+          variant="contained"
+          onClick={() => {
+            window.open("https://app.elvate.io");
+            setDisplayMenu(false);
+          }}
+        >
+          Open App
+        </Button>
         <Button
           sx={{ margin: 1 }}
           onClick={() => {
