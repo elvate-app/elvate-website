@@ -7,6 +7,7 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import { Box, styled, Typography } from "@mui/material";
+import ScrollAnimation from "react-animate-on-scroll";
 import BarSvg from "src/component/BarSvg";
 
 const Root = styled(Box)`
@@ -22,9 +23,11 @@ const Root = styled(Box)`
 const RoadmapSection = () => {
   return (
     <Root id="roadmap">
-      <Typography variant="h4" marginBottom={2}>
-        Roadmap
-      </Typography>
+      <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+        <Typography variant="h4" marginBottom={2}>
+          Roadmap
+        </Typography>
+      </ScrollAnimation>
 
       <Timeline position="alternate" sx={{ minWidth: 200 }}>
         <TimelineItem>
@@ -32,29 +35,24 @@ const RoadmapSection = () => {
             <TimelineDot color="primary" />
             <TimelineConnector sx={{ height: 60 }} />
           </TimelineSeparator>
-          <TimelineContent>Core smart contract</TimelineContent>
+          <TimelineContent>
+            <ScrollAnimation
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+            >
+              Core smart contract
+            </ScrollAnimation>
+          </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot color="primary" />
             <TimelineConnector sx={{ height: 60 }} />
           </TimelineSeparator>
-          <TimelineContent>Frontend application</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="secondary" />
-            <TimelineConnector sx={{ height: 60 }} />
-          </TimelineSeparator>
-          <TimelineContent>In-depth testing</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="secondary" />
-            <TimelineConnector sx={{ height: 60 }} />
-          </TimelineSeparator>
           <TimelineContent>
-            Deploy on Binance Smart chain Testnet
+            <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
+              Frontend application
+            </ScrollAnimation>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -62,20 +60,63 @@ const RoadmapSection = () => {
             <TimelineDot color="secondary" />
             <TimelineConnector sx={{ height: 60 }} />
           </TimelineSeparator>
-          <TimelineContent>Deploy on Binance Smart chain</TimelineContent>
+          <TimelineContent>
+            <ScrollAnimation
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+            >
+              In-depth testing
+            </ScrollAnimation>
+          </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot color="secondary" />
             <TimelineConnector sx={{ height: 60 }} />
           </TimelineSeparator>
-          <TimelineContent>Support other chain</TimelineContent>
+          <TimelineContent>
+            <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
+              Deploy on Binance Smart chain Testnet
+            </ScrollAnimation>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot color="secondary" />
+            <TimelineConnector sx={{ height: 60 }} />
+          </TimelineSeparator>
+          <TimelineContent>
+            <ScrollAnimation
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+            >
+              Deploy on Binance Smart chain
+            </ScrollAnimation>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineSeparator>
+            <TimelineDot color="secondary" />
+            <TimelineConnector sx={{ height: 60 }} />
+          </TimelineSeparator>
+          <TimelineContent>
+            <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
+              Support other chain
+            </ScrollAnimation>
+          </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot color="secondary" />
           </TimelineSeparator>
-          <TimelineContent>Snapshot airdrop ?</TimelineContent>
+          <TimelineContent>
+            <ScrollAnimation
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+            >
+              Snapshot airdrop ?
+            </ScrollAnimation>
+          </TimelineContent>
         </TimelineItem>
       </Timeline>
 
