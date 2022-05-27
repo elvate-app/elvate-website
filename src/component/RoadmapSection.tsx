@@ -117,7 +117,7 @@ const RoadmapSection = () => {
                   animateOnce={true}
                   offset={80}
                 >
-                  Deploy on Binance Smart chain Testnet
+                  Deploy on Matic Mumbai Testnet
                 </ScrollAnimation>
               </TimelineContent>
             </TimelineItem>
@@ -132,7 +132,7 @@ const RoadmapSection = () => {
                   animateOnce={true}
                   offset={80}
                 >
-                  Deploy on Binance Smart chain
+                  Deploy on Matic Mainnet
                 </ScrollAnimation>
               </TimelineContent>
             </TimelineItem>
@@ -147,7 +147,7 @@ const RoadmapSection = () => {
                   animateOnce={true}
                   offset={80}
                 >
-                  Support other chain
+                  Multiple Chain Support
                 </ScrollAnimation>
               </TimelineContent>
             </TimelineItem>
